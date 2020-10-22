@@ -32,7 +32,7 @@ body, html {
 }
 
 .bgimg-3 {
-  background-image: url("https://i.pinimg.com/originals/62/6f/50/626f50f0c49576e903333a26e0d39cc9.jpg");
+  background-image: url("./ceri.jpeg");
   min-height: 400px;
 }
 
@@ -48,7 +48,6 @@ body, html {
 </style>
 <body>
 
-<!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
@@ -63,7 +62,6 @@ body, html {
     </a>
   </div>
 
-  <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">SKILLS</a>
@@ -72,11 +70,9 @@ body, html {
   </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container" id="home">
 </div>
 
-<!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3> <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">AAYUSH <span class="w3-hide-small">KUMAR</span> MISHRA</span>
@@ -130,19 +126,18 @@ body, html {
 
 </div>
 
-<!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container">
   <div class="w3-display-middle">
     <span class="w3-padding-large w3-black w3-xlarge w3-wide">PROJECTS</span>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
+<!-- Second Parallax Image -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">MY PROJECTS</h3>
   <p class="w3-center"><em>This is the list of a few technical projects that I made.<br> Click on them to look at the github repositories.</em></p><br>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <!-- Container (Projects Section) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
       <a href="https://github.com/mishra-aayush/BussPass" target="_blank" style="background-color: #3399ff; color: white; padding: 14px 25px; text-align: center;">Buss Pass</a>
@@ -182,6 +177,52 @@ body, html {
   </div>
 </div>
 
+<!-- Third Parallax Image -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-padding-large w3-black w3-xlarge w3-wide">CERTIFICATES</span>
+  </div>
+</div>
+
+<!-- Container (Certificates Section) -->
+<div class="w3-content w3-container w3-padding-64" id="certificates">
+  <h3 class="w3-center">MY CERTIFICATES</h3>
+  <p class="w3-center"><em>Here are some of my certificates that highlight my achievements.</em></p><br>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m6">
+      <img src="./hpair1.jpg" style="width: 400px" onclick="onClick(this)" class="w3-hover-opacity" alt="Impact Challenge">
+    </div>
+
+    <div class="w3-col m6">
+      <img src="./hpair2.jpg" style="width: 400px" onclick="onClick(this)" class="w3-hover-opacity" alt="Scholarship Recipient">
+    </div>
+  </div>
+  <br><br>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m6">
+      <img src="./IDYFC.jpg" style="width: 400px" onclick="onClick(this)" class="w3-hover-opacity" alt="IDYF Participation">
+    </div>
+
+    <div class="w3-col m6">
+      <img src="./orf.png" style="width: 400px" onclick="onClick(this)" class="w3-hover-opacity" alt="Voice+ Completion">
+    </div>
+  </div>
+  <br><br>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m6">
+      <img src="./MTA.jpg" style="width: 400px" onclick="onClick(this)" class="w3-hover-opacity" alt="Cloud Fundamentals">
+    </div>
+
+    <div class="w3-col m6">
+      <img src="./dvi.jpg" style="width: 400px" onclick="onClick(this)" class="w3-hover-opacity" alt="Virtual Internship">
+    </div>
+  </div>
+  <br><br>
+</div>
+
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
@@ -191,50 +232,14 @@ body, html {
   </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-padding-large w3-black w3-xlarge w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">HOW TO CONTACT ME?</h3>
-  <p class="w3-center"><em>Feel free to get in touch anytime!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="http://www.decordhome.in/wp-content/uploads/2016/03/kids4-1024x1024.jpg" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Jaipur, India<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 9521278479<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: 17ucs001@lnmiit.ac.in<br>
-      </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
-  </div>
-</div>
-
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a><br><br>
+  <div class="w3-large w3-margin-bottom">
+      <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Jaipur, India<br>
+      <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Phone: +91 9521278479<br>
+      <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Email: 17ucs001@lnmiit.ac.in<br>
+  </div>
   <div class="w3-xlarge w3-section">
     <a href= "https://www.facebook.com/prince.aayushmishra"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
     <a href= "https://www.instagram.com/aayushmishra_"><i class="fa fa-instagram w3-hover-opacity"></i></a>
