@@ -35,12 +35,14 @@
       min-height: 400px;
       }
       .w3-wide {letter-spacing: 10px;}
-      .w3-hover-opacity {cursor: pointer;}
       @media only screen and (max-device-width: 1600px) {
       .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: scroll;
       min-height: 400px;
       }
+      }
+      .certificate-image:hover {
+         transform: scale(1.15);
       }
    </style>
    <body>
@@ -159,42 +161,42 @@
          <br>
          <div class="w3-row-padding w3-center">
             <div class="w3-col m6 w3-section">
-               <img src="./hpair1.jpg" style="width: 80%" onclick="onClick(this)" class="w3-hover-opacity" alt="Impact Challenge">
+               <img src="./hpair1.jpg" style="width: 80%" onclick="onClick(this)" class="certificate-image" alt="Impact Challenge">
             </div>
             <div class="w3-col m6 w3-section">
-               <img src="./hpair2.jpg" style="width: 80%" onclick="onClick(this)" class="w3-hover-opacity" alt="Scholarship Recipient">
-            </div>
-         </div>
-         <div class="w3-row-padding w3-center">
-            <div class="w3-col m6 w3-section">
-               <img src="./IDYFC.jpg" style="width: 80%" onclick="onClick(this)" class="w3-hover-opacity" alt="IDYF Participation">
-            </div>
-            <div class="w3-col m6 w3-section">
-               <img src="./orf.PNG" style="width: 80%" onclick="onClick(this)" class="w3-hover-opacity" alt="Voice+ Completion">
+               <img src="./hpair2.jpg" style="width: 80%" onclick="onClick(this)" class="certificate-image" alt="Scholarship Recipient">
             </div>
          </div>
          <div class="w3-row-padding w3-center">
             <div class="w3-col m6 w3-section">
-               <img src="./MTA.jpg" style="width: 80%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cloud Fundamentals">
+               <img src="./IDYFC.jpg" style="width: 80%" onclick="onClick(this)" class="certificate-image" alt="IDYF Participation">
             </div>
             <div class="w3-col m6 w3-section">
-               <img src="./dvi.JPG" style="width: 80%" onclick="onClick(this)" class="w3-hover-opacity" alt="Virtual Internship">
+               <img src="./orf.PNG" style="width: 80%" onclick="onClick(this)" class="certificate-image" alt="Voice+ Completion">
             </div>
          </div>
          <div class="w3-row-padding w3-center">
             <div class="w3-col m6 w3-section">
-               <img src="./certificate1.JPG" style="width: 80%" onclick="onClick(this)" class="w3-hover-opacity" alt="EIPRHR Certification">
+               <img src="./MTA.jpg" style="width: 80%" onclick="onClick(this)" class="certificate-image" alt="Cloud Fundamentals">
             </div>
             <div class="w3-col m6 w3-section">
-               <img src="./storymirror.jpeg" style="width: 80%" onclick="onClick(this)" class="w3-hover-opacity" alt="Story Mirror Contribution">
+               <img src="./dvi.JPG" style="width: 80%" onclick="onClick(this)" class="certificate-image" alt="Virtual Internship">
+            </div>
+         </div>
+         <div class="w3-row-padding w3-center">
+            <div class="w3-col m6 w3-section">
+               <img src="./certificate1.JPG" style="width: 80%" onclick="onClick(this)" class="certificate-image" alt="EIPRHR Certification">
+            </div>
+            <div class="w3-col m6 w3-section">
+               <img src="./storymirror.jpeg" style="width: 80%" onclick="onClick(this)" class="certificate-image" alt="Story Mirror Contribution">
             </div>
          </div>
       </div>
       <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
          <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-         <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+         <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-8">
             <img id="img01" class="w3-image">
-            <p id="caption" class="w3-opacity w3-large"></p>
+            <p id="caption" class="w3-opacity w3-large w3-padding-16"></p>
          </div>
       </div>
       <footer class="w3-center w3-black w3-padding-64">
