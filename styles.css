@@ -10,6 +10,15 @@ body, html
       line-height: 1.8;
 }
 
+@media only screen and (max-device-width: 1600px) 
+{
+      .bgimg-1, .bgimg-2, .bgimg-3 
+      {
+            background-attachment: scroll;
+            min-height: 400px;
+      }
+}
+
 .bgimg-1, .bgimg-2, .bgimg-3 
 {
       background-attachment: fixed;
@@ -48,14 +57,15 @@ body, html
       padding: 14px 25px; 
       text-align: center;
 }
-      
-@media only screen and (max-device-width: 1600px) 
+
+.para
 {
-      .bgimg-1, .bgimg-2, .bgimg-3 
-      {
-            background-attachment: scroll;
-            min-height: 400px;
-      }
+      text-align: justify;
+}
+
+#github
+{
+      margin-top: 64px;
 }
       
 .certificate-image:hover 
