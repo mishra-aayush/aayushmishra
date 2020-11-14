@@ -76,7 +76,7 @@ $.getJSON('https://api.chess.com/pub/player/ruined_toucan/stats', function(data)
         
     document.getElementById("chess-blitz-last").innerHTML = `${data.chess_blitz.last.rating}`;
     document.getElementById("chess-blitz-best").innerHTML = `${data.chess_blitz.best.rating}`;
-    document.getElementById("chess-blitz-played").innerHTML = +`${data.chess_blitz.record.win}` + +`${data.chess_bullet.record.loss}` + +`${data.chess_bullet.record.draw}`;
+    document.getElementById("chess-blitz-played").innerHTML = +`${data.chess_blitz.record.win}` + +`${data.chess_blitz.record.loss}` + +`${data.chess_blitz.record.draw}`;
 });
 
 $.getJSON('https://lichess.org/api/user/ruined_toucan', function(data) 
