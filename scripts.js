@@ -67,3 +67,23 @@ function showDivs(n)
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-black";
 }
+
+$.getJSON('https://api.chess.com/pub/player/ruined_toucan/stats', function(data) 
+{
+    document.getElementById("chess-bullet-last").innerHTML = `${data.chess_bullet.last.rating}`;
+    document.getElementById("chess-bullet-best").innerHTML = `${data.chess_bullet.best.rating}`;
+    document.getElementById("chess-bullet-played").innerHTML = +`${data.chess_bullet.record.win}` + +`${data.chess_bullet.record.loss}` + +`${data.chess_bullet.record.draw}`;
+        
+    document.getElementById("chess-blitz-last").innerHTML = `${data.chess_blitz.last.rating}`;
+    document.getElementById("chess-blitz-best").innerHTML = `${data.chess_blitz.best.rating}`;
+    document.getElementById("chess-blitz-played").innerHTML = +`${data.chess_blitz.record.win}` + +`${data.chess_bullet.record.loss}` + +`${data.chess_bullet.record.draw}`;
+});
+
+$.getJSON('https://lichess.org/api/user/ruined_toucan', function(data) 
+{
+    document.getElementById("lichess-bullet-curr").innerHTML = `${data.perfs.bullet.rating}`;
+    document.getElementById("lichess-bullet-played").innerHTML = `${data.perfs.bullet.games}`;
+        
+    document.getElementById("lichess-blitz-curr").innerHTML = `${data.perfs.blitz.rating}`;
+    document.getElementById("lichess-blitz-played").innerHTML = `${data.perfs.blitz.games}`;
+});
