@@ -2,6 +2,8 @@
 <html>
    <head>
       <link rel="icon" href="./images/face.png">
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
    </head>
    <title>Aayush Kumar Mishra</title>
    <meta charset="UTF-8">
@@ -21,6 +23,7 @@
             <a href="#projects" class="w3-bar-item w3-button w3-hide-small" style ="color: black"><b><i class="fa fa-cogs"></i> PROJECTS</b></a>
             <a href="#certificates" class="w3-bar-item w3-button w3-hide-small" style ="color: black"><b><i class="fa fa-certificate"></i> CERTIFICATES</b></a>
             <a href="#artwork" class="w3-bar-item w3-button w3-hide-small" style ="color: black"><b><i class="fa fa-paint-brush"></i> ART</b></a>
+            <a href="#artwork" class="w3-bar-item w3-button w3-hide-small" style ="color: black"><b><i class="fas fa-chess-knight"></i> CHESS</b></a>
             </a>
          </div>
          <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
@@ -29,6 +32,7 @@
             <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
             <a href="#certificates" class="w3-bar-item w3-button" onclick="toggleFunction()">CERTIFICATES</a>
             <a href="#artwork" class="w3-bar-item w3-button" onclick="toggleFunction()">ART</a>
+            <a href="#artwork" class="w3-bar-item w3-button" onclick="toggleFunction()">CHESS</a>
          </div>
       </div>
       <div class="bgimg-1 w3-display-container" id="home"></div>
@@ -219,6 +223,62 @@
   			   <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
 		   </div>
       </div>
+      <div class="bgimg-5 w3-display-container">
+        	<div class="w3-display-middle">
+            	<span class="w3-padding-large w3-black w3-xlarge w3-wide">CHESS</span>
+         	</div>
+      </div>
+	  <div class="w3-content w3-container w3-padding-64 w3-responsive">
+  		<h3 class="w3-center">MY CHESS RATINGS</h3>
+        <p class="w3-center"><em>Here is the list of my latest chess ratings in different formats.</em></p>
+        <br>
+
+        <p>My latest stats from <a href="https://chess.com" target="_blank"><img src="./images/chess.png" style="width: 80px"></a></p>
+  		<table class="w3-table-all">
+    	<thead>
+      	<tr class="w3-black">
+        	<th>Game Format</th>
+        	<th>Last Rating</th>
+        	<th>Best Rating</th>
+        	<th>Games Played</th>
+      	</tr>
+    	</thead>
+    	<tr>
+      		<td>Bullet</td>
+      		<td id = "chess-bullet-last"></td>
+      		<td id = "chess-bullet-best"></td>
+      		<td id = "chess-bullet-played"></td>
+    	</tr>
+    	<tr>
+      		<td>Blitz</td>
+      		<td id = "chess-blitz-last"></td>
+      		<td id = "chess-blitz-best"></td>
+      		<td id = "chess-blitz-played"></td>
+    	</tr>
+  		</table>
+  		<br><br>
+
+  		<p>My latest stats from <a href="https://lichess.org" target="_blank"><img src="./images/lichess.png" style="width: 50px"></a></p>
+  		<table class="w3-table-all">
+    	<thead>
+      	<tr class="w3-black">
+        	<th>Game Format</th>
+        	<th>Current Rating</th>
+        	<th>Games Played</th>
+      	</tr>
+    	</thead>
+    	<tr>
+      		<td>Bullet</td>
+      		<td id = "lichess-bullet-curr"></td>
+      		<td id = "lichess-bullet-played"></td>
+    	</tr>
+    	<tr>
+      		<td>Blitz</td>
+      		<td id = "lichess-blitz-curr"></td>
+      		<td id = "lichess-blitz-played"></td>
+    	</tr>
+  		</table>
+	  </div>
       <footer class="w3-center w3-black w3-padding-64">
          <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a><br><br>
          <div class="w3-large w3-margin-bottom">
