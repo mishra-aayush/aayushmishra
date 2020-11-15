@@ -93,3 +93,8 @@ body, html
 {
       transform: scale(1.15);
 }
+
+#lichess-org, #chess-com
+{
+      margin-top: 32px;
+}
