@@ -77,6 +77,10 @@ $.getJSON('https://api.chess.com/pub/player/ruined_toucan/stats', function(data)
     document.getElementById("chess-blitz-last").innerHTML = `${data.chess_blitz.last.rating}`;
     document.getElementById("chess-blitz-best").innerHTML = `${data.chess_blitz.best.rating}`;
     document.getElementById("chess-blitz-played").innerHTML = +`${data.chess_blitz.record.win}` + +`${data.chess_blitz.record.loss}` + +`${data.chess_blitz.record.draw}`;
+
+    document.getElementById("chess-rapid-last").innerHTML = `${data.chess_rapid.last.rating}`;
+    document.getElementById("chess-rapid-best").innerHTML = `${data.chess_rapid.best.rating}`;
+    document.getElementById("chess-rapid-played").innerHTML = +`${data.chess_rapid.record.win}` + +`${data.chess_rapid.record.loss}` + +`${data.chess_rapid.record.draw}`;
 });
 
 $.getJSON('https://lichess.org/api/user/ruined_toucan', function(data) 
@@ -86,4 +90,7 @@ $.getJSON('https://lichess.org/api/user/ruined_toucan', function(data)
         
     document.getElementById("lichess-blitz-curr").innerHTML = `${data.perfs.blitz.rating}`;
     document.getElementById("lichess-blitz-played").innerHTML = `${data.perfs.blitz.games}`;
+
+    document.getElementById("lichess-rapid-curr").innerHTML = `${data.perfs.rapid.rating}`;
+    document.getElementById("lichess-rapid-played").innerHTML = `${data.perfs.rapid.games}`;
 });
