@@ -71,12 +71,20 @@ body, html
       width: 50%;
 }
 
-.project-element
+.button
 {
       background-color: #33d6ff; 
       color: black; 
       padding: 14px 25px; 
       text-align: center;
+      width: 100%;
+      border: none;
+      font-weight: bold;
+}
+
+a
+{
+      text-decoration: none;
 }
 
 .para
